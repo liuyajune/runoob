@@ -6,3 +6,17 @@
 
 程序分析：兔子的规律为数列1,1,2,3,5,8,13,21....
 '''
+
+def fib(n):
+    if n == 0:
+        return  1
+    if n == 1:
+        return  1
+    return fib(n - 1) + fib(n  - 2)
+
+print(fib(5))
+
+sum  = 0
+for i in range(5):
+    sum += fib(i)
+print(sum)
