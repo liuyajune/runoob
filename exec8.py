@@ -14,6 +14,8 @@ pep8  python代码编写规范
 #             print("%d * %d = %d "% (i, j, i * j), end=" ")
 
 
+
+#使用类方法实现
 class  MultiFunc:
     def __init__(self,m=9, n=9):
         self.line = m
@@ -31,3 +33,4 @@ class  MultiFunc:
 
 myMulti = MultiFunc(9, 9)
 myMulti.multi()
+
