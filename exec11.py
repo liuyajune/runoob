@@ -22,7 +22,7 @@ for i in range(5):
 print(sum)
 
 #
-# 使用类方式定义fib，私有
+# 使用类方式定义fib，使用方法和属性
 #
 class  Fib:
     def __init__(self,n):
