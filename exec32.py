@@ -5,3 +5,6 @@
 
 程序分析：无。
 '''
+a = ['one', 'two', 'three']
+for i in a[::-1]:
+	print(i)

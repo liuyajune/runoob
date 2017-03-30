@@ -6,3 +6,10 @@
 
 程序分析：采取逆向思维的方法，从后往前推断。
 '''
+total = 0
+left = 1
+for day in range(9):
+     total = (left + 1) * 2
+     left = total
+
+print(total)
