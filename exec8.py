@@ -19,7 +19,7 @@ class  MultiFunc:
         self.line = m
         self.row = n
 
-    def multi(self):
+    def multi(self,m, n):
         m,n = self.line, self.row
         for i  in range(1, m + 1):
             print()
