@@ -20,3 +20,27 @@ sum  = 0
 for i in range(5):
     sum += fib(i)
 print(sum)
+
+#
+# 使用类方式定义fib，私有
+#
+class  Fib:
+    def __init__(self,n):
+        self.n = n
+        self.sum = 0
+
+    def __fib(self, n):
+        if n == 0:
+            return 1
+        if n == 1:
+            return 1
+        return self.__fib(n - 1) + self.__fib(n - 2)
+
+    def count(self):
+        for i in range(self.n):
+            self.sum += self.__fib(i)
+            print('%d month %d rabbit' % (i, self.__fib(i)))
+        print("total rabbit is %d" % self.sum)
+
+f = Fib(5)
+f.count()
